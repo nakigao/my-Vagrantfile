@@ -14,7 +14,7 @@ yum update
 # php
 yum install -y epel-release
 rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
-yum install -y --enablerepo=remi,remi-php56 php php-devel php-pear php-mbstring php-pdo php-mysql php-gd php-mcrypt php-opcache
+yum install -y --enablerepo=remi,epel,remi-php56 php php-devel php-pear php-mbstring php-pdo php-mysql php-gd php-mcrypt php-opcache
 sed -i -e "s|;error_log = syslog|error_log = /var/log/php.log|" /etc/php.ini
 sed -i -e "s|;mbstring.language = Japanese|mbstring.language = Japanese|" /etc/php.ini
 sed -i -e "s|;mbstring.internal_encoding = EUC-JP|mbstring.internal_encoding = UTF-8|" /etc/php.ini
