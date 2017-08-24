@@ -39,10 +39,10 @@ chkconfig mysqld on
 # httpd
 yum install -y  httpd httpd-devel
 sed -i -e "s|#ServerName www.example.com:80|ServerName localhost:80|" /etc/httpd/conf/httpd.conf
-sed -i -e "s|Listen 80|Listen 192.168.100.110:80" /etc/httpd/conf/httpd.conf
+sed -i -e "s|Listen 80|Listen 192.168.100.100:80" /etc/httpd/conf/httpd.conf
 echo '<?php phpinfo(); ?>' > /var/www/html/index.php
 service httpd restart
 chkconfig httpd on
 
 # etc
-yum install -y rsync tree git
+yum install -y rsync tree git zip unzip

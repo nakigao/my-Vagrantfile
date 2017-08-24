@@ -45,4 +45,4 @@ service httpd restart
 chkconfig httpd on
 
 # etc
-yum install -y rsync tree git
+yum install -y rsync tree git zip unzip
