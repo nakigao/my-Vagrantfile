@@ -45,4 +45,6 @@ service httpd restart
 chkconfig httpd on
 
 # etc
-yum install -y rsync tree git zip unzip
+yum install -y rsync tree git zip unzip vsftpd
+export CLICOLOR=1
+export LSCOLORS=DxGxcxdxCxegedabagacad
