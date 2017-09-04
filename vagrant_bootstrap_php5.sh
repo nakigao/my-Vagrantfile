@@ -45,6 +45,6 @@ service httpd restart
 chkconfig httpd on
 
 # etc
-yum install -y rsync tree git zip unzip vsftpd
+yum install -y rsync tree git zip unzip vsftpd npm
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
